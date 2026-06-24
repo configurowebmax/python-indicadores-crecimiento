@@ -142,10 +142,10 @@ def cargar_al_inicio():
     if not datos:
         return
     try:
-            if "anterior" in datos:
-                document.querySelector("#anterior").value = datos["anterior"]
-            if "actual" in datos:
-                document.querySelector("#actual").value = datos["actual"]
+        if "anterior" in datos:
+            document.querySelector("#anterior").value = datos["anterior"]
+        if "actual" in datos:
+            document.querySelector("#actual").value = datos["actual"]
         aviso = document.querySelector("#resultado")
         aviso.innerHTML = "📂 Datos cargados. Pulsa <em>Calcular</em>."
         aviso.classList.remove("hidden")
